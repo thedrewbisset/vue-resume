@@ -1,6 +1,6 @@
 <template>
 <div class="home">
-  <h3 class="title">best-resume-ever</h3>
+  <h3 class="title">drewbisset--engineering-leader</h3>
   <div class="previews">
     <div class="preview">
       <router-link v-bind:to="'/resume/material-dark-extended'">
