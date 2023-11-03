@@ -3,26 +3,37 @@ name:
   first: Drew
   middle:
   last: Bisset
-about: Hello, I'm a passionate leader and thoughtful engineer who is solutions-driven and serious
-     about producing business results. I've been a professional in the technology field for nearly 15 years
-     in various roles as contributor, manager, and executive. As an advocate for remote, distributed
-     teams I have deep experience achieving business impact, loyalty, and personal development
-     through intentional communication, asynchronous collaboration, and empathetic alliancing.
-position: Engineering Leader
+about: "Hello, I'm a driven and influential leader, strategic problem solver, and serious
+     about using technology to achieve business results. I've been a professional in the field for over 15 years
+in various roles as contributor, manager, and executive. Some of my proudest career achievements include:"
+achievements: 
+  - Grew the startup, Peerfit, from 10-60 people, achieving a Series-C round of funding, and later leading a multi-million dollar acquisition of my team and our proprietary technology platform by Peloton Interactive.
+  - Established Peloton's Corporate Wellness business which won customer contracts with SAP, Samsung, and Nasdaq among others and was ranked by 90% of benefit participants as one of their top 3 employer benefits. The product was responsible for adding millions of dollars of incremental revenue to Peloton's business by lowering the customer barrier-to-entry through negotiated rates on hardware / services while increasing employee retention and decreasing healthcare costs through tailored engagement experiences on Peloton's platform aimed at creating workforce connection and wellbeing.
+  - Lead the turnaround of the Ecommerce Engineering zone at Peloton as business challenges and changes in senior leadership led to layoffs, subsequent waves of voluntary attrition, plummiting stock value, and a material shift in company priorities and culture. During this time I helped reboot the engineering team's strategy leading to successfully backfilling over 20 positions, restructuring the org to be better aligned with business priorities, sponsoring over a dozen promotions including a Senior Staff Engineer and Engineering Director position that I sponsored directly with executive leadership, and drove commerce results that helped Peloton improve its financial results by hundreds of millions of dollars year over year.
+position: Technology Leader
 
 birth:
   year: 1982
   location: Virginia
 
 experience:
+- company: Peloton Interactive
+  position: Senior Technical Director
+  timeperiod: November 2020 - July 2023
+  description:
+    - Lead the engineering team responsible for building Peloton's Corporate Wellness technology platform and business
+    - Created, contributed, and ran a remote engineering conference, EmpowerCon, for more than 100 Ecommerce software engineer participants over the course of 3 days and targeted at increasing team engagement and professional growth.
+    - Created, contributed, and ran an in-person Ecommerce product team conference for more than 100 engineer, product, TPM, and designer participants over the course of 3 days and targeted at increasing team connection and calibrating vision for the upcoming year.
+    - Unified the hiring framework on the Ecommerce engineering team which helped accelerate and retain over 20 backfill positions and land skillsets that were better aligned with the flexibility and velocity the business required from our team.
+    - Implemented a variety of mechanisms that helped to scale the team including a weekly meeting dedicated to reporting continuous improvements in the area of operational excellence, a monthly retrospective with all engineering leadership to reflect on successes and struggles and pursue actions for improving, along with introducing value streams as an approach to organizing teams and prioritizing work which helped reduce disruption, empower teams to obsess over problem spaces, and more easily align priorities with business KPIs and OKRs.
 - company: Peerfit
   position: CTO
-  timeperiod: since December 2017
+  timeperiod: December 2017 - November 2020
   description:
     - Lead Product and Engineering from startup to growth company, scaling staff by 6x over a 2 year period to meet significant market demand and an aggressive growth pace.
     - Guided the strategy and execution of the product toward strategic business opportunities enabling sales growth of more than 4000% and an increase in engagement of more than 200% year over year.
-    - Responsible for all company technology including SAAS and MDM and helped operationalize their management through implementations of RBAC, software procurement, and zero trust networking.
-    - Managed a $7MM P&L at peak growth mode and helped implement a software capitalization system resulting in significant increases to net income for the company.
+    - Responsible for all company technology including SAAS and MDM and helped operationalize their management through implementations of RBAC, software procurement, and zero trust network technology.
+    - Managed a $7MM P&L at peak growth mode and helped implement a software capitalization system resulting in significant tax benefits for the company.
     - Oversaw the successfull transformation of department procedures and controls to support the achievement of WCAG AA 2.0, HIPAA Hi-Tech, and SOC-2 Type-2 compliance certifications.
   website: https://peerfit.com
 
@@ -32,10 +43,10 @@ experience:
   description:
     - Implemented a Mastery program purposed towards knowledge sharing and skill development for T&N engineers leading to an increase in team engagement and a stronger overlap of knowledge and expertise.
     - Helped to build the next gen implementation of a lean supply chain management system for use across T&N's third party manufacturers.
-    - Supported quick pivots on business strategy including T&N's first Black Friday Sale and introduction of a new premium mattress line both of which demanded fast and pragmatic engineering solutions.
+    - Supported quick pivots on business strategy including T&N's first Black Friday Sale and release of a new premium mattress line.
 
 - company: Aetna
-  position: Engineering Manager, Senior Fullstack Engineer
+  position: Engineering Manager
   timeperiod: April 2014 - February 2017
   description:
     - Helped build the flagship price transparency product using Ember and Ruby on Rails. This was later iteratively scaled to a service-oriented design using AMQP over RabbitMQ allowing for more flexible and performant integration of data from various Aetna and 3rd party systems.
@@ -51,9 +62,9 @@ experience:
 #   position: Software Engineer, Technology Support Team Lead
 #   timeperiod: February 2007 - September 2012
 
-# education:
-# - degree: Bachelor of Music - New England Conservatory
-#   timeperiod: September 2002 - May 2006
+education:
+- degree: Bachelor of Arts, Music Composition - New England Conservatory
+  timeperiod: September 2002 - May 2006
 
 # skill level goes 0 to 100
 
@@ -65,27 +76,45 @@ languages:
 - name: Elixir
   level: 60
 - name: Python
-  level: 50
+  level: 60
 - name: Bash
   level: 70
+- name: C-sharp
+  level: 40
 
 tools:
-- name: Gitlab
-  level: 80
+- name: Amazon Web Services
+  level: 60
+- name: Google Cloud Platform
+  level: 70
+- name: Microsoft Azure
+  level: 30
 - name: Jira
   level: 80
+- name: Asana
+  level: 60
 - name: Looker
   level: 70
-- name: Docker
-  level: 70
-- name: Kubernetes
-  level: 40
-- name: GCP
+- name: Microsoft Power BI
+  level: 30
+- name: Cloudflare
   level: 50
-- name: vim
-  level: 70
-- name: tmux
-  level: 70
+- name: Splunk
+  level: 50
+- name: SumoLogic
+  level: 50
+- name: Microsoft Sentinel
+  level: 30
+- name: RingCentral
+  level: 40
+- name: Microsoft Dynamics
+  level: 50
+- name: Hubspot
+  level: 40
+- name: OnePhone
+  level: 50
+- name: OneLogin
+  level: 60
 
 contact:
   email: thedrewbisset@gmail.com
@@ -94,5 +123,6 @@ contact:
   city: Lexington, VA
   website: https://thedrewbisset.com
   github: thedrewbisset
+  linkedin: thedrewbisset
 lang: en
 `

@@ -22,4 +22,8 @@ body {
   overflow-x: hidden;
   background: #CCCCCC;
 }
+
+#myselfpic {
+  height: 550px;
+}
 </style>

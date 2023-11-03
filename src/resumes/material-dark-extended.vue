@@ -4,55 +4,69 @@
     <div class="shadow"></div>
     <div class="heading" id="myselfpic">
     </div>
-    <div class="section-headline">
-      {{ lang.contact }}
+    <div class="item contact">
+      <div class="section-headline">
+        {{ lang.contact }}
+      </div>
+      <a :href="contactLinks.phone">
+        <div class="item">
+          <div class="icon">
+            <i class="material-icons">phone</i>
+          </div>
+          <div class="text">
+            {{person.contact.phone}}
+          </div>
+        </div>
+      </a>
+
+      <a :href="contactLinks.email">
+        <div class="item">
+          <div class="icon">
+            <i class="material-icons">email</i>
+          </div>
+          <div class="text">
+            {{person.contact.email}}
+          </div>
+        </div>
+      </a>
+
+      <a :href="contactLinks.linkedin">
+        <div class="item">
+          <div class="icon">
+            <i class="section-link__icon fa fa-linkedin"></i>
+          </div>
+          <div class="text">
+            {{person.contact.linkedin}}
+          </div>
+        </div>
+      </a>
+
+
+      <a v-if="person.contact.github" :href="contactLinks.github" target="_blank">
+        <div class="item">
+          <div class="icon">
+            <i class="fa fa-github"></i>
+          </div>
+          <div class="text github">
+            <span>@{{person.contact.github}}</span>
+            <span>github.com/{{person.contact.github}}</span>
+          </div>
+        </div>
+      </a>
+
+      <a v-if="person.contact.website" :href="person.contact.website" target="_blank">
+        <div class="item">
+          <div class="icon">
+            <i class="material-icons">language</i>
+          </div>
+          <div class="text">
+            <span>{{person.contact.website}}</span>
+          </div>
+        </div>
+      </a>
     </div>
-    <a :href="contactLinks.phone">
-      <div class="item">
-        <div class="icon">
-          <i class="material-icons">phone</i>
-        </div>
-        <div class="text">
-          {{person.contact.phone}}
-        </div>
-      </div>
-    </a>
 
-    <a :href="contactLinks.email">
-      <div class="item">
-        <div class="icon">
-          <i class="material-icons">email</i>
-        </div>
-        <div class="text">
-          {{person.contact.email}}
-        </div>
-      </div>
-    </a>
-
-    <a v-if="person.contact.github" :href="contactLinks.github" target="_blank">
-      <div class="item">
-        <div class="icon">
-          <i class="fa fa-github"></i>
-        </div>
-        <div class="text github">
-          <span>@{{person.contact.github}}</span>
-          <span>github.com/{{person.contact.github}}</span>
-        </div>
-      </div>
-    </a>
-
-    <a v-if="person.contact.website" :href="person.contact.website" target="_blank">
-      <div class="item">
-        <div class="icon">
-          <i class="material-icons">language</i>
-        </div>
-        <div class="text">
-          <span>{{person.contact.website}}</span>
-        </div>
-      </div>
-    </a>
-
-    <div class="item">
+    <div class="item languages">
       <div class="section-headline">
         {{ lang.languages }}
       </div>
@@ -68,8 +82,8 @@
       </div>
     </div>
 
-    <div class="item last">
-      <div class="section-headline tools">
+    <div class="item last tools">
+      <div class="section-headline">
         {{ lang.tools }}
       </div>
       <div class="skill" v-for="tool in person.tools" :key="tool.name">
@@ -92,14 +106,18 @@
     </div>
     <div class="block">
       <p class="about">{{person.about}}</p>
+      <p class="info" v-for="item in person.achievements">{{item}}</p>
     </div>
 
-    <div class="section-headline">{{ lang.experience }}</div>
-    <div class="block" v-for="experience in person.experience" :key="experience.company">
+    <div class="section-headline experience">{{ lang.experience }}</div>
+    <div class="block" v-bind:class="experience.company" v-for="experience in person.experience" :key="experience.company">
       <div class="block-helper"></div>
       <h3 class="headline">{{experience.position}} - {{experience.company}}</h3>
         <div class="subheadline">{{experience.timeperiod}}</div>
         <p class="info" v-for="item in experience.description">{{item}}</p>
+    </div>
+    <div class="block">
+      <p class="about"><span>For additional job history, please visit:</span>&nbsp;<a :href="contactLinks.linkedin">https://linkedin.com/in/thedrewbisset</a></p>
     </div>
     <div class="section-headline" v-if="person.education">{{ lang.education }}</div>
     <div class="block" v-for="education in person.education" :key="education.degree">
@@ -368,6 +386,12 @@ h4 {
     width:100%;
     height:440px;
   }
+  .item.contact {
+    margin-bottom: 60px;
+  }
+  .item.languages {
+    margin-bottom: 490px;
+  }
   .item {
     width:100%;
     margin-top:13px;
@@ -469,12 +493,15 @@ h4 {
     .block {
       box-shadow: none;
     }
+    .experience {
+      page-break-before: always;
+    }
+    .Peerfit {
+      page-break-before: always;
+    }
   }
   .leftCol {
     width: 33%;
-    .section-headline.tools {
-      margin-top: 23px;
-    }
     .heading {
       height: 360px;
     }
