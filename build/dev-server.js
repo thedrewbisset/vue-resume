@@ -3,7 +3,7 @@ if (!process.env.NODE_ENV) {
   process.env.NODE_ENV = JSON.parse(config.dev.env.NODE_ENV)
 }
 
-var opn = require('open')
+var opn = require('opn')
 var path = require('path')
 var express = require('express')
 var webpack = require('webpack')
@@ -39,7 +39,10 @@ var hotMiddleware = require('webpack-hot-middleware')(compiler, {
 })
 // force page reload when html-webpack-plugin template changes
 compiler.plugin('compilation', function (compilation) {
-  hotMiddleware.publish({ action: 'reload' })
+  compilation.plugin('html-webpack-plugin-after-emit', function (data, cb) {
+    hotMiddleware.publish({ action: 'reload' })
+    cb()
+  })
 })
 
 // proxy api requests
